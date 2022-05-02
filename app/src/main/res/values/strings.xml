@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DrinkTime</string>
+
+    <string name="empty_string" />
+
+    <string name="less_level_api">Insufficient level api</string>
+
+    <string name="pitchers_title">Define the interval</string>
+
+    <string name="remember_message">YOU MUST DRINK NOW</string>
+
+    <string name="hour_in_short">H</string>
+    <string name="minute_in_short">M</string>
+    <string name="second_in_short">S</string>
+    <string name="millisecond_in_short">mS</string>
+
+    <string name="save_interval">Save</string>
+    <string name="save_interval_description">Save the defined interval</string>
+
+    <string name="notification_alert_name">End_countdown</string>
+    <string name="notification_alert_description">Fired end your countdown is ended</string>
+    <string name="notification_notification_name">Notification</string>
+    <string name="notification_notification_description">News</string>
+    <string name="notification_alarm_title">Water</string>
+    <string name="notification_clear">Clear</string>
+</resources>
