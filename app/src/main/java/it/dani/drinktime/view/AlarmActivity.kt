@@ -1,14 +1,10 @@
 package it.dani.drinktime.view
 
-import android.app.AlarmManager
-import android.app.PendingIntent
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import it.dani.drinktime.R
-import it.dani.drinktime.view.receiver.RememberReceiver
+import it.dani.drinktime.controller.AlarmController
 
 class AlarmActivity : AppCompatActivity() {
 
@@ -18,10 +14,7 @@ class AlarmActivity : AppCompatActivity() {
 
         val clear = this.intent.getBooleanExtra("clear",false)
         if(clear) {
-            val alarmManager = this.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-            val intent = Intent(this, RememberReceiver::class.java)
-            val pendingIntent = PendingIntent.getBroadcast(this, 0xA0, intent, PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_CANCEL_CURRENT)
-            alarmManager.cancel(pendingIntent)
+            AlarmController.getInstance().cancel(this)
             this.finish()
         }
 

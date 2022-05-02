@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">DrinkTime</string>
 
-    <string name="empty_string" />
+    <string name="empty_string" translatable="false" />
+    <string name="shared_preferences_filename" translatable="false">preference_main_file</string>
 
     <string name="less_level_api">Insufficient level api</string>
 
@@ -16,6 +17,7 @@
 
     <string name="save_interval">Save</string>
     <string name="save_interval_description">Save the defined interval</string>
+    <string name="cancel_alarm_description">Cancel alarm</string>
 
     <string name="notification_alert_name">End_countdown</string>
     <string name="notification_alert_description">Fired end your countdown is ended</string>

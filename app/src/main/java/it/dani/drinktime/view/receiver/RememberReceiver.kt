@@ -25,6 +25,7 @@ class RememberReceiver : BroadcastReceiver() {
         context?.let { ctx ->
             val newIntent = Intent(ctx, AlarmActivity::class.java).apply {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                putExtra("message",message)
             }
             val pendingIntent = PendingIntent.getActivity(ctx, 0xC0, newIntent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
 
